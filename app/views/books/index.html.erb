@@ -1,9 +1,9 @@
-<h1>Books</h1>
-
+<div class="books_index">
+<h1 class= "heading">Books</h1>
 
 <table>
   <tr>
-    <th>Title</th>
+    <th style="width: 150px;">Title</th>
     <th>Body</th>
     <th colspan="3"></th>
   </tr>
@@ -18,23 +18,16 @@
   <% end %>
 </table>
   
-
-
-
-
-
-
-<h3>New book</h3>
-<div class=" new_book">
+<h3 class="new_book">New book</h3>
   <%= form_with model: Book.new do |f| %>
- 
-  <h7>Title</h7>
-  <p><%= f.text_field :title %></p>
-	
-  <h7>Body</h7>
-  <p><%= f.text_area :body %></p>
-	
-  <%= f.submit 'Create Book' %>
+   <div class="books_title"> 
+      <h7 class="new_book_title">Title</h7>
+      <p><%= f.text_field :title %></p>
+    </div>
+    <div class="books_body">
+      <h7>Body</h7>
+      <p><%= f.text_area :body %></p>
+    </div>	
+    <%= f.submit 'Create Book' %>
   <% end %>
 </div>
-

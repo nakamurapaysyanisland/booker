@@ -1,19 +1,22 @@
-<div class="container">
-  <h1>Editing Book</h1>
+<div class="books_edit">
+  <h2 class="heading">Editing Book</h2>
 
   <%= form_with model: @book do |f| %>
-
+  <div class="books_title">
     <h7>Title</h7>
     <p><%= f.text_field :title %></p>
-
+  </div>
+  <div class="books_body">
     <h7>Body</h7>
     <p><%= f.text_area :body %></p>
-
+  </div>
+  <div class="actions">
     <%= f.submit 'Update Book' %>
-
+  </div>
   <% end %>
 
-   
-  <%= link_to "Show", book_path(@book.id) %> |
-  <%= link_to "Back", books_path %>
+  <div class="links">
+    <%= link_to "Show", book_path(@book.id) %> |
+    <%= link_to "Back", books_path %>
+  </div>
 </div>

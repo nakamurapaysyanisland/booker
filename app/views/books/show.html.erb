@@ -1,12 +1,15 @@
-<p>
-  <h7>Title:</h7>
-  <%= @book.title %>
-</p>
+<div class="books_show">
+  <div class="books_title_show">
+    <h7>Title:</h7>
+    <%= @book.title %>
+  </div>
 
-<p>
-  <h7>Body:</h7>
-  <%= @book.body %>
-</p>
-
-<%= link_to "Edit", edit_book_path(@book.id) %>  |
-<%= link_to "Back", book_path(@book) %>
+  <p>
+    <h7>Body:</h7>
+    <%= @book.body %>
+  </p>
+</div>
+<div class="links">
+  <%= link_to "Edit", edit_book_path(@book.id) %>  |
+  <%= link_to "Back", books_path %>
+</div>

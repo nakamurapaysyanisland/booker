@@ -13,6 +13,20 @@
  *= require_tree .
  *= require_self
  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 30px;
+}
+
+ .books_index {
+   font-family: sans-serif;
+ }
+
 .new-book {
   margin-top: 20px;
   flex-direction: column;
@@ -20,4 +34,51 @@
 
 .container {
   margin: 20px;
+}
+
+.books_index {
+  margin-top; 5px;
+}
+
+.heading {
+    margin-bottom: 5px;
+    
+}
+
+th,td{
+  padding-right: 20px;
+}
+
+.new_book {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.books_show {
+  margin-bottom: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.books_title_show {
+  margin-bottom: 30px;
+}
+
+.books_title,
+.books_body,
+.actions {
+  margin-bottom: 10px;
+}
+
+
+a {
+  color: black;
+}
+
+.top_text {
+  line-height: 50px;
+  margin: 10px 0;
+}
+.top_contents {
+  margin-left: 30px;
 }
