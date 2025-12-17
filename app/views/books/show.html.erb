@@ -5,10 +5,10 @@
     <%= @book.title %>
   </div>
 
-  <p>
+  <div class="books_body_show">
     <h7 class="show_label">Body:</h7>
     <%= @book.body %>
-  </p>
+  </div>
 </div>
 <div class="links">
   <%= link_to "Edit", edit_book_path(@book.id) %>  |
